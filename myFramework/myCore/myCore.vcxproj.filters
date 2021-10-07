@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DXTK">
+      <UniqueIdentifier>{a14fa444-3b16-4a5f-8f2b-3222650d7515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{a30ef8c9-283a-476c-a49d-1a56b6e21704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b053db4a-8534-4da8-aaf5-4f68fd10b9e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DXCore">
+      <UniqueIdentifier>{aae5d178-1237-4cc1-9a05-0b07d4330a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{3968c5a8-efd1-4b01-9ec2-ec23f5d2b3f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{51c5243a-6055-4610-bc51-b70c8b283485}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="myMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="dxtk\DDSTextureLoader.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="dxtk\ScreenGrab.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="dxtk\WICTextureLoader.cpp">
+      <Filter>DXTK</Filter>
+    </ClCompile>
+    <ClCompile Include="myCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="myWindow.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="myDxState.cpp">
+      <Filter>DXCore</Filter>
+    </ClCompile>
+    <ClCompile Include="myDxRT.cpp">
+      <Filter>DXCore</Filter>
+    </ClCompile>
+    <ClCompile Include="myDevice.cpp">
+      <Filter>DXCore</Filter>
+    </ClCompile>
+    <ClCompile Include="myTimer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="myWrite.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="myInput.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="mySound.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="mySoundManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myUtil.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="myMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\DDSTextureLoader.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\DirectXHelpers.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\ScreenGrab.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\WICTextureLoader.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\LoaderHelpers.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\pch.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\DDS.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="dxtk\PlatformHelpers.h">
+      <Filter>DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="myCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="myCoreStd.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="myStd.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="myWindow.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="myBasicStd.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="myDxState.h">
+      <Filter>DXCore</Filter>
+    </ClInclude>
+    <ClInclude Include="myDxRT.h">
+      <Filter>DXCore</Filter>
+    </ClInclude>
+    <ClInclude Include="myDevice.h">
+      <Filter>DXCore</Filter>
+    </ClInclude>
+    <ClInclude Include="myTimer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="myWrite.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="myInput.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="mySound.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="mySoundManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl">
+      <Filter>Math</Filter>
+    </None>
+  </ItemGroup>
+</Project>

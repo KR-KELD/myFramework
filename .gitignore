@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/myFramework/.vs/myFramework
+/myFramework/Test/x64/Debug
+/myFramework/x64/Debug
+/output/Debug
