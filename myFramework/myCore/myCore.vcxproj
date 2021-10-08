@@ -205,6 +205,8 @@ copy "*.inl" "..\\..\\include"</Command>
     <ClCompile Include="myMath.cpp" />
     <ClCompile Include="mySound.cpp" />
     <ClCompile Include="mySoundManager.cpp" />
+    <ClCompile Include="myTexture.cpp" />
+    <ClCompile Include="myTextureManager.cpp" />
     <ClCompile Include="myTimer.cpp" />
     <ClCompile Include="myWindow.cpp" />
     <ClCompile Include="myWrite.cpp" />
@@ -230,6 +232,8 @@ copy "*.inl" "..\\..\\include"</Command>
     <ClInclude Include="mySound.h" />
     <ClInclude Include="mySoundManager.h" />
     <ClInclude Include="myStd.h" />
+    <ClInclude Include="myTexture.h" />
+    <ClInclude Include="myTextureManager.h" />
     <ClInclude Include="myTimer.h" />
     <ClInclude Include="myUtil.h" />
     <ClInclude Include="myWindow.h" />

@@ -78,6 +78,12 @@
     <ClCompile Include="mySoundManager.cpp">
       <Filter>Manager</Filter>
     </ClCompile>
+    <ClCompile Include="myTexture.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="myTextureManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myUtil.h">
@@ -151,6 +157,12 @@
     </ClInclude>
     <ClInclude Include="mySoundManager.h">
       <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="myTexture.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="myTextureManager.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
