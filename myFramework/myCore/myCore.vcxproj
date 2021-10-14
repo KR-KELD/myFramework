@@ -197,10 +197,12 @@ copy "*.inl" "..\\..\\include"</Command>
     <ClCompile Include="dxtk\DDSTextureLoader.cpp" />
     <ClCompile Include="dxtk\ScreenGrab.cpp" />
     <ClCompile Include="dxtk\WICTextureLoader.cpp" />
+    <ClCompile Include="myComponent.cpp" />
     <ClCompile Include="myCore.cpp" />
     <ClCompile Include="myDevice.cpp" />
     <ClCompile Include="myDxRT.cpp" />
     <ClCompile Include="myDxState.cpp" />
+    <ClCompile Include="myGameObject.cpp" />
     <ClCompile Include="myInput.cpp" />
     <ClCompile Include="myMath.cpp" />
     <ClCompile Include="mySound.cpp" />
@@ -222,11 +224,13 @@ copy "*.inl" "..\\..\\include"</Command>
     <ClInclude Include="dxtk\ScreenGrab.h" />
     <ClInclude Include="dxtk\WICTextureLoader.h" />
     <ClInclude Include="myBasicStd.h" />
+    <ClInclude Include="myComponent.h" />
     <ClInclude Include="myCore.h" />
     <ClInclude Include="myCoreStd.h" />
     <ClInclude Include="myDevice.h" />
     <ClInclude Include="myDxRT.h" />
     <ClInclude Include="myDxState.h" />
+    <ClInclude Include="myGameObject.h" />
     <ClInclude Include="myInput.h" />
     <ClInclude Include="myMath.h" />
     <ClInclude Include="mySound.h" />

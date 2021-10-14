@@ -8,6 +8,7 @@ Sample::Sample()
 
 bool Sample::Init()
 {
+	Comp1 = g_CompFactory.NewComponent<myComponent>();
 	return true;
 }
 
@@ -23,5 +24,6 @@ bool Sample::Render()
 
 bool Sample::Release()
 {
+	SAFE_DELETE(Comp1);
 	return true;
 }

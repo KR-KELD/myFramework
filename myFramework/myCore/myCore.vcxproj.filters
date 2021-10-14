@@ -31,6 +31,12 @@
     <Filter Include="Manager">
       <UniqueIdentifier>{51c5243a-6055-4610-bc51-b70c8b283485}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{dc1f65c0-80d7-4f17-bef2-b088cf6e114b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{551a84c0-912d-430c-92a5-1b84f8ca8711}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="myMath.cpp">
@@ -82,13 +88,16 @@
       <Filter>Resource</Filter>
     </ClCompile>
     <ClCompile Include="myTextureManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="myComponent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="myGameObject.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="myUtil.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="myMath.h">
       <Filter>Math</Filter>
     </ClInclude>
@@ -162,6 +171,15 @@
       <Filter>Resource</Filter>
     </ClInclude>
     <ClInclude Include="myTextureManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="myUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="myComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="myGameObject.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
