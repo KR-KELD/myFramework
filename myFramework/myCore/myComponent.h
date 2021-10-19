@@ -74,23 +74,10 @@ struct Component_Identifier
 };
 
 class myGameObject;
-class myTransform;
 class myComponent;
+class myObjectFactory;
 
 
-class myComponentFactory : public mySingleTon<myComponentFactory>
-{
-public:
-	friend  class mySingleTon<myComponentFactory>;
-public:
-	template <class Component_T>
-	Component_T* NewComponent()
-	{
-		Component_T* newComp = new Component_T(Component_T::baseComponent);
-		return newComp;
-	}
-};
-#define g_CompFactory myComponentFactory::GetInstance()
 
 #define DEFINE_COMPONENT(component_name, parent_component_name, unique_component) \
 	public: \
@@ -100,21 +87,37 @@ public:
 		static const char* GetComponentName(void) { return #component_name; } \
 	private: \
 		static Component_Identifier_T identifier; \
-		static const component_name baseComponent; \
-		friend class myComponentFactory; \
+		static component_name baseComponent; \
+		friend class myObjectFactory; \
 
 #define DECLARE_COMPONENT(component_name) \
 	component_name::Component_Identifier_T component_name::identifier; \
-	const component_name component_name::baseComponent; \
+	component_name component_name::baseComponent; \
 
 class myComponent
 {
 public:
+	myGameObject*	m_pOwner;
 	bool			m_isActive;
 	DEFINE_COMPONENT(myComponent, null_t, false)
 public:
+	virtual bool	Init();
+	virtual bool	PreFrame();
+	virtual bool	Frame();
+	virtual bool	PostFrame();
+	virtual bool	PreRender(ID3D11DeviceContext* pd3dContext);
+	virtual bool	Render(ID3D11DeviceContext* pd3dContext);
+	virtual bool	PostRender(ID3D11DeviceContext* pd3dContext);
+	virtual void	Update(ID3D11DeviceContext* pd3dContext);
+public:
+	bool Combine(myGameObject* pOwner)
+	{
+		m_pOwner = pOwner;
+	}
+public:
 	myComponent()
 	{
+		m_pOwner = nullptr;
 		m_isActive = true;
 	}
 	virtual ~myComponent() {}

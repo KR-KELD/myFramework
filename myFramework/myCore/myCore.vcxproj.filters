@@ -37,6 +37,12 @@
     <Filter Include="Util">
       <UniqueIdentifier>{551a84c0-912d-430c-92a5-1b84f8ca8711}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{5e08a279-6f09-4ad2-a042-269f745dcd45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{14ae4b76-1da8-4137-b4bd-acdcef981cff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="myMath.cpp">
@@ -90,10 +96,25 @@
     <ClCompile Include="myTextureManager.cpp">
       <Filter>Manager</Filter>
     </ClCompile>
-    <ClCompile Include="myComponent.cpp">
+    <ClCompile Include="myObjectFactory.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="myTransform.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="myObjectManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="myComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
     <ClCompile Include="myGameObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="myMesh.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="myMeshComponent.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -176,10 +197,28 @@
     <ClInclude Include="myUtil.h">
       <Filter>Util</Filter>
     </ClInclude>
-    <ClInclude Include="myComponent.h">
+    <ClInclude Include="myObjectFactory.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="myTransform.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="myObjectManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="myComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
     <ClInclude Include="myGameObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="myMesh.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="myMeshComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="myBaseStruct.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
